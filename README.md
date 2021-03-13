@@ -1,6 +1,6 @@
 # FPLTransfers
 
-A Python package based on the (fpl)[https://github.com/amosbastian/fpl] and (pandas-fpl)[https://github.com/177arc/pandas-fpl] packages which can be used to analyse a team and work out optimum transfers.
+A Python package based on the [fpl](https://github.com/amosbastian/fpl) and [pandas-fpl](https://github.com/177arc/pandas-fpl) packages which can be used to analyse a team and work out optimum transfers.
 
 Has functions to do wildcard, single and double gameweek transfers.
 
