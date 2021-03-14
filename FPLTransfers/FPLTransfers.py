@@ -4,6 +4,7 @@ import pandas
 from concurrent.futures import ThreadPoolExecutor
 from fpl import FPL
 from fpl.constants import API_URLS
+from fpl.utils import fetch, logged_in
 
 class FPLTransfers():
     '''
@@ -71,7 +72,6 @@ class FPLTransfers():
         '''
         def func(x):
             return -1.35 * (0.8 ** ((1/15) + x)) + 1.05
-        print(it)
         tol = func(it)
         mean_money_left = 100 - ((100 / 15) * it)
         if it == 13:

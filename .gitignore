@@ -1,0 +1,8 @@
+# Python Additions
+.vscode
+__pycache__
+
+# Package Additions
+*.egg-info
+dist
+build
