@@ -73,13 +73,15 @@ class FPLTransfers():
         def func(x):
             return -1.35 * (0.8 ** ((1/15) + x)) + 1.05
         tol = func(it)
-        mean_money_left = 100 - ((100 / 15) * it)
+        
         if it == 13:
             mean_money_left = 10
-        if it == 14:
+        elif it == 14:
             mean_money_left = 4.5
         elif it == 15:
             mean_money_left = 0.1
+        else:
+            mean_money_left = 100 - ((100 / 15) * it)
         #print(money_left, mean_money_left, (mean_money_left/money_left), (1 - tol) + 1)
         result = 0 < mean_money_left / money_left < (1 - tol) + 1
         return result
